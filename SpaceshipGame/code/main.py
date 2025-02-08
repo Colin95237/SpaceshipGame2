@@ -48,7 +48,7 @@ while running:
     player_rect.x += player_direction * 0.4
     if player_rect.right > WINDOW_WIDTH or player_rect.left < 0:
         player_direction *= -1
-    display_surface.blit(player_surf, player_rect)
+    display_surface.blit(player_surf, player_rect.topleft)
 
     pygame.display.update()       
 
